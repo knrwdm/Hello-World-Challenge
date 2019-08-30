@@ -17,7 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcx-gg-UfT">
+                                <rect key="frame" x="169" y="64" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peP-PQ-h1g">
+                                <rect key="frame" x="189.5" y="95" width="35" height="30"/>
+                                <state key="normal" title="Hello"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-0T-EgK">
+                                <rect key="frame" x="189" y="135" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mcx-gg-UfT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Rj-yl-apn"/>
+                            <constraint firstItem="peP-PQ-h1g" firstAttribute="top" secondItem="Mcx-gg-UfT" secondAttribute="bottom" constant="10" id="S8e-8u-s1i"/>
+                            <constraint firstItem="kdt-0T-EgK" firstAttribute="top" secondItem="peP-PQ-h1g" secondAttribute="bottom" constant="10" id="Uhn-c6-opx"/>
+                            <constraint firstItem="Mcx-gg-UfT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wft-zF-A2X"/>
+                            <constraint firstItem="kdt-0T-EgK" firstAttribute="centerX" secondItem="peP-PQ-h1g" secondAttribute="centerX" id="u1t-Pv-rmB"/>
+                            <constraint firstItem="peP-PQ-h1g" firstAttribute="centerX" secondItem="Mcx-gg-UfT" secondAttribute="centerX" id="zGA-P5-gw5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
